@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Веб-Проект</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">WebDev<span>.</span></div>
+            <nav class="nav">
+                <a href="#about">О проекте</a>
+                <a href="#services">Услуги</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+            <a href="#contact" class="btn btn-header">Связаться</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="about">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Создаем простые и удобные сайты</h1>
+                    <p>Учебный проект по веб-верстке. Изучаем HTML, CSS, адаптивные сетки и анимации.</p>
+                    <a href="#services" class="btn">Узнать больше</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/400x300/e2e8f0/475569?text=Web+Development" alt="Разработка сайтов">
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <h2>Что мы делаем</h2>
+                <div class="grid-cards">
+                    <div class="card">
+                        <h3>Адаптив</h3>
+                        <p>Сайты отлично выглядят как на компьютерах, так и на смартфонах.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Семантика</h3>
+                        <p>Использование правильных тегов HTML5 для хорошей структуры.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Анимация</h3>
+                        <p>Плавные переходы и интерактивные элементы при наведении.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Оставить заявку</h2>
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" name="name" placeholder="Иван" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Ваш Email:</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Напишите пару слов..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="agree" required>
+                        <label for="agree">Согласен на обработку данных</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+            <div class="socials">
+                <a href="#">VK</a>
+                <a href="#">Telegram</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
